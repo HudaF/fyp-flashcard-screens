@@ -1,7 +1,14 @@
 import React, { Component } from "react";
-import { StyleSheet, View, TouchableOpacity, Text } from "react-native";
+import {
+  StyleSheet,
+  View,
+  TouchableOpacity,
+  Text,
+  TextInput
+} from "react-native";
 import IoniconsIcon from "react-native-vector-icons/Ionicons";
 import FontAwesomeIcon from "react-native-vector-icons/FontAwesome";
+import { Center } from "@builderx/utils";
 
 function CupertinoHeaderWithBackground1(props) {
   return (
@@ -18,16 +25,16 @@ function CupertinoHeaderWithBackground1(props) {
           <Text style={styles.leftText}></Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.textWrapper}>
-        <Text numberOfLines={1} style={styles.wordIdentification}>
-          Word Identification
-        </Text>
-      </View>
       <View style={styles.rightWrapper}></View>
       <FontAwesomeIcon
         name="align-justify"
         style={styles.icon}
       ></FontAwesomeIcon>
+      <Text style={styles.loremIpsum}></Text>
+      <TextInput placeholder="" style={styles.textInput}></TextInput>
+      <Center horizontal>
+        <Text style={styles.wordIdentification}>Word Identification</Text>
+      </Center>
     </View>
   );
 }
@@ -40,7 +47,7 @@ const styles = StyleSheet.create({
     paddingLeft: 8
   },
   leftWrapper: {
-    flex: 0.22,
+    flex: 0.16,
     alignItems: "flex-start",
     justifyContent: "center"
   },
@@ -57,32 +64,49 @@ const styles = StyleSheet.create({
     paddingLeft: 5,
     color: "#FFFFFF"
   },
-  textWrapper: {
-    flex: 0.49,
-    alignItems: "center",
-    justifyContent: "center"
-  },
-  wordIdentification: {
-    fontSize: 17,
-    fontFamily: "poppins-700",
-    lineHeight: 17,
-    color: "rgba(255,255,255,1)",
-    textAlign: "center"
-  },
   rightWrapper: {
-    flex: 0.21,
+    flex: 0.23,
     alignItems: "flex-end",
     justifyContent: "center"
   },
   icon: {
-    top: 10,
+    top: 11,
     position: "absolute",
     color: "rgba(255,255,255,1)",
     fontSize: 30,
     width: 40,
     height: 40,
-    flex: 0.07,
-    right: 5
+    flex: 0.09,
+    right: 5,
+    left: 335
+  },
+  loremIpsum: {
+    top: -138,
+    left: -345,
+    position: "absolute",
+    fontFamily: "roboto-regular",
+    color: "#121212",
+    height: 45,
+    width: 116
+  },
+  textInput: {
+    top: -228,
+    left: -147,
+    position: "absolute",
+    fontFamily: "roboto-regular",
+    color: "#121212",
+    height: 61,
+    width: 42
+  },
+  wordIdentification: {
+    top: 22,
+    position: "absolute",
+    fontFamily: "poppins-regular",
+    color: "rgba(255,255,255,1)",
+    height: 22,
+    width: 219,
+    textAlign: "center",
+    fontSize: 17
   }
 });
 

@@ -5,9 +5,11 @@ import { createDrawerNavigator } from "react-navigation-drawer";
 import { AppLoading } from "expo";
 import * as Font from "expo-font";
 import WordIdentification from "./src/screens/WordIdentification";
+import ObjectIDent from "./src/screens/ObjectIDent";
 
 const DrawerNavigation = createDrawerNavigator({
-  WordIdentification: WordIdentification
+  WordIdentification: WordIdentification,
+  ObjectIDent: ObjectIDent
 });
 
 const StackNavigation = createStackNavigator(
@@ -15,7 +17,8 @@ const StackNavigation = createStackNavigator(
     DrawerNavigation: {
       screen: DrawerNavigation
     },
-    WordIdentification: WordIdentification
+    WordIdentification: WordIdentification,
+    ObjectIDent: ObjectIDent
   },
   {
     headerMode: "none"
@@ -43,7 +46,8 @@ async function loadResourcesAsync() {
     Font.loadAsync({
       "poppins-600": require("./src/assets/fonts/poppins-600.ttf"),
       "poppins-700": require("./src/assets/fonts/poppins-700.ttf"),
-      "roboto-regular": require("./src/assets/fonts/roboto-regular.ttf")
+      "roboto-regular": require("./src/assets/fonts/roboto-regular.ttf"),
+      "poppins-regular": require("./src/assets/fonts/poppins-regular.ttf")
     })
   ]);
 }
