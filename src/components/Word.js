@@ -10,12 +10,16 @@ function Word(props) {
 }
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    justifyContent: "center"
+  },
   کیلا: {
     fontFamily: "roboto-regular",
     color: "#121212",
     fontSize: 60,
-    flex: 1
+    width: 82,
+    height: 72,
+    alignSelf: "center"
   }
 });
 
