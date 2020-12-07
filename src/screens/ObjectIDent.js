@@ -5,47 +5,58 @@ import CupertinoHeaderWithBackground2 from "../components/CupertinoHeaderWithBac
 function ObjectIDent(props) {
   return (
     <View style={styles.container}>
-      <CupertinoHeaderWithBackground2
-        style={styles.cupertinoHeaderWithBackground2}
-      ></CupertinoHeaderWithBackground2>
-      <View style={styles.rect}>
-        <Image
-          source={require("../assets/images/apple4.jpg")}
-          resizeMode="contain"
-          style={styles.image}
-        ></Image>
+      <View style={styles.cupertinoHeaderWithBackground3Row}>
+        <CupertinoHeaderWithBackground2
+          style={styles.cupertinoHeaderWithBackground3}
+        ></CupertinoHeaderWithBackground2>
+        <View style={styles.group3}>
+          <CupertinoHeaderWithBackground2
+            style={styles.cupertinoHeaderWithBackground2}
+          ></CupertinoHeaderWithBackground2>
+        </View>
       </View>
-      <View style={styles.buttonRow}>
-        <TouchableOpacity style={styles.button}>
+      <View style={styles.group}>
+        <View style={styles.rect}>
           <Image
-            source={require("../assets/images/kela3.png")}
+            source={require("../assets/images/apple4.jpg")}
             resizeMode="contain"
-            style={styles.image2}
+            style={styles.image}
           ></Image>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button1}>
-          <Image
-            source={require("../assets/images/saib.png")}
-            resizeMode="contain"
-            style={styles.image4}
-          ></Image>
-        </TouchableOpacity>
+        </View>
       </View>
-      <View style={styles.button2Row}>
-        <TouchableOpacity style={styles.button2}>
-          <Image
-            source={require("../assets/images/aam_text.png")}
-            resizeMode="contain"
-            style={styles.image7}
-          ></Image>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button3}>
-          <Image
-            source={require("../assets/images/angoor.png")}
-            resizeMode="contain"
-            style={styles.image8}
-          ></Image>
-        </TouchableOpacity>
+      <View style={styles.group2}>
+        <View style={styles.buttonRow}>
+          <TouchableOpacity style={styles.button}>
+            <Image
+              source={require("../assets/images/kela3.png")}
+              resizeMode="contain"
+              style={styles.image2}
+            ></Image>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button1}>
+            <Image
+              source={require("../assets/images/saib.png")}
+              resizeMode="contain"
+              style={styles.image4}
+            ></Image>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.button2Row}>
+          <TouchableOpacity style={styles.button2}>
+            <Image
+              source={require("../assets/images/aam_text.png")}
+              resizeMode="contain"
+              style={styles.image7}
+            ></Image>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button3}>
+            <Image
+              source={require("../assets/images/angoor.png")}
+              resizeMode="contain"
+              style={styles.image8}
+            ></Image>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
@@ -55,25 +66,47 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   },
-  cupertinoHeaderWithBackground2: {
-    height: 55,
-    marginTop: 20
+  cupertinoHeaderWithBackground3: {
+    width: 360,
+    height: 43
   },
-  rect: {
+  group3: {
+    width: 360,
+    height: 43,
+    marginLeft: 466,
+    marginTop: 30
+  },
+  cupertinoHeaderWithBackground2: {
+    flex: 1
+  },
+  cupertinoHeaderWithBackground3Row: {
+    height: 73,
+    flexDirection: "row",
+    marginLeft: -826
+  },
+  group: {
     width: 296,
     height: 177,
+    marginTop: 29,
+    marginLeft: 38
+  },
+  rect: {
     backgroundColor: "rgba(255,255,255,1)",
     borderWidth: 2,
     borderColor: "#000000",
     borderRadius: 20,
-    marginTop: 5,
-    marginLeft: 38
+    flex: 1
   },
   image: {
     width: 149,
     height: 158,
-    marginTop: 9,
     marginLeft: 73
+  },
+  group2: {
+    width: 289,
+    height: 220,
+    marginTop: 31,
+    marginLeft: 42
   },
   button: {
     width: 135,
@@ -108,10 +141,7 @@ const styles = StyleSheet.create({
   },
   buttonRow: {
     height: 91,
-    flexDirection: "row",
-    marginTop: 86,
-    marginLeft: 32,
-    marginRight: 39
+    flexDirection: "row"
   },
   button2: {
     width: 135,
@@ -147,9 +177,7 @@ const styles = StyleSheet.create({
   button2Row: {
     height: 91,
     flexDirection: "row",
-    marginTop: 38,
-    marginLeft: 32,
-    marginRight: 39
+    marginTop: 38
   }
 });
 

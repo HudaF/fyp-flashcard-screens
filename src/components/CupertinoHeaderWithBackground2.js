@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { StyleSheet, View, TouchableOpacity, Text } from "react-native";
 import IoniconsIcon from "react-native-vector-icons/Ionicons";
-import FontAwesomeIcon from "react-native-vector-icons/FontAwesome";
 import { Center } from "@builderx/utils";
+import FontAwesomeIcon from "react-native-vector-icons/FontAwesome";
 
 function CupertinoHeaderWithBackground2(props) {
   return (
@@ -13,13 +13,9 @@ function CupertinoHeaderWithBackground2(props) {
             name="ios-arrow-back"
             style={styles.leftIcon}
           ></IoniconsIcon>
-          <Text style={styles.leftText}>Back</Text>
+          <Text style={styles.leftText}></Text>
         </TouchableOpacity>
       </View>
-      <FontAwesomeIcon
-        name="align-justify"
-        style={styles.icon}
-      ></FontAwesomeIcon>
       <Center horizontal>
         <View style={styles.textWrapper}>
           <Text numberOfLines={1} style={styles.wordIdentification}>
@@ -27,9 +23,10 @@ function CupertinoHeaderWithBackground2(props) {
           </Text>
         </View>
       </Center>
-      <View style={styles.rightWrapper}>
-        <TouchableOpacity style={styles.button}></TouchableOpacity>
-      </View>
+      <FontAwesomeIcon
+        name="align-justify"
+        style={styles.icon}
+      ></FontAwesomeIcon>
     </View>
   );
 }
@@ -62,19 +59,10 @@ const styles = StyleSheet.create({
     paddingLeft: 5,
     color: "#FFFFFF"
   },
-  icon: {
-    top: 7,
-    position: "absolute",
-    color: "rgba(252,250,250,1)",
-    fontSize: 30,
-    width: 29,
-    height: 30,
-    left: 320
-  },
   textWrapper: {
     alignItems: "center",
     justifyContent: "center",
-    width: 280,
+    width: 206,
     height: 44
   },
   wordIdentification: {
@@ -83,16 +71,15 @@ const styles = StyleSheet.create({
     lineHeight: 17,
     color: "rgba(255,255,255,1)"
   },
-  rightWrapper: {
-    alignItems: "flex-end",
-    justifyContent: "center",
-    width: 73,
-    height: 44,
-    right: 0,
-    left: 48,
-    top: 0
-  },
-  button: {}
+  icon: {
+    position: "absolute",
+    color: "rgba(252,250,250,1)",
+    fontSize: 30,
+    width: 29,
+    height: 30,
+    right: 9,
+    bottom: 7
+  }
 });
 
 export default CupertinoHeaderWithBackground2;

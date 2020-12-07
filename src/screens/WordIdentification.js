@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { StyleSheet, View, Image, TouchableOpacity } from "react-native";
-import CupertinoHeaderWithBackground2 from "../components/CupertinoHeaderWithBackground2";
+import Wordhead from "../components/Wordhead";
 
 function WordIdentification(props) {
   return (
@@ -55,9 +55,7 @@ function WordIdentification(props) {
           style={styles.image6}
         ></Image>
       </View>
-      <CupertinoHeaderWithBackground2
-        style={styles.cupertinoHeaderWithBackground2}
-      ></CupertinoHeaderWithBackground2>
+      <Wordhead style={styles.wordhead}></Wordhead>
     </View>
   );
 }
@@ -177,10 +175,10 @@ const styles = StyleSheet.create({
     marginLeft: 24,
     marginRight: -912
   },
-  cupertinoHeaderWithBackground2: {
-    height: 55,
+  wordhead: {
     width: 360,
-    marginTop: -563
+    height: 43,
+    marginTop: -551
   }
 });
 
