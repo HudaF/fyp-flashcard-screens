@@ -45,7 +45,6 @@ function WordIdentification(props) {
             style={styles.image4}
           ></Image>
         </View>
-        <View style={styles.button2StackFiller}></View>
         <View style={styles.button3Stack}>
           <TouchableOpacity style={styles.button3}></TouchableOpacity>
           <Image
@@ -64,15 +63,15 @@ const styles = StyleSheet.create({
     flex: 1
   },
   cupertinoHeaderWithBackground1: {
-    height: 60,
+    height: 84,
     width: 360,
     marginTop: 23
   },
   group: {
-    width: 175,
-    height: 99,
-    marginTop: 19,
-    marginLeft: 92
+    width: 157,
+    height: 89,
+    marginTop: 9,
+    marginLeft: 108
   },
   rect: {
     backgroundColor: "rgba(255,255,255,1)",
@@ -87,13 +86,13 @@ const styles = StyleSheet.create({
     flexDirection: "row"
   },
   image: {
-    width: 117,
-    height: 73,
-    marginRight: 29,
+    width: 105,
+    height: 66,
+    marginRight: 26,
     marginTop: 13
   },
   button: {
-    top: 2,
+    top: 0,
     left: 0,
     position: "absolute",
     backgroundColor: "rgba(255,191,8,1)",
@@ -101,7 +100,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderWidth: 0,
     borderColor: "#000000",
-    bottom: 0
+    height: 175
   },
   image2: {
     left: 0,
@@ -109,55 +108,58 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "#000000",
     borderRadius: 12,
-    bottom: 0,
     width: 150,
-    top: 0
+    top: 0,
+    height: 177
   },
   buttonStack: {
-    width: 150
+    width: 150,
+    height: 177,
+    marginTop: 2
   },
   button1: {
+    left: 0,
     position: "absolute",
     backgroundColor: "rgba(255,191,8,1)",
-    right: 0,
     borderRadius: 12,
     borderWidth: 0,
     borderColor: "#000000",
     top: 2,
-    bottom: 0,
-    width: 150
+    width: 150,
+    height: 175
   },
   image3: {
-    left: 0,
+    left: 1,
     position: "absolute",
     borderWidth: 2,
     borderColor: "#000000",
     borderRadius: 12,
     top: 0,
-    bottom: 0,
-    width: 150
+    width: 150,
+    height: 177
   },
   button1Stack: {
-    width: 150,
+    width: 151,
+    height: 177,
     marginLeft: 12
   },
   buttonStackRow: {
-    height: 177,
+    height: 179,
     flexDirection: "row",
-    marginTop: 25,
+    marginTop: 11,
     marginLeft: 24,
-    marginRight: 24
+    marginRight: 23
   },
   button2: {
-    top: 2,
-    left: 0,
+    top: 0,
+    left: 1,
     position: "absolute",
     backgroundColor: "rgba(255,191,8,1)",
     width: 150,
     borderRadius: 12,
     borderWidth: 0,
     borderColor: "#000000",
-    bottom: 0
+    height: 175
   },
   image4: {
     top: 0,
@@ -167,26 +169,23 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "#000000",
     borderRadius: 12,
-    bottom: 0
+    height: 177
   },
   button2Stack: {
-    width: 150,
-    marginBottom: 2
-  },
-  button2StackFiller: {
-    flex: 1,
-    flexDirection: "row"
+    width: 151,
+    height: 177,
+    marginTop: 2
   },
   button3: {
-    top: 0,
+    top: 2,
+    left: 0,
     position: "absolute",
     backgroundColor: "rgba(255,191,8,1)",
-    right: 0,
     borderRadius: 12,
     borderWidth: 1,
     borderColor: "#000000",
-    bottom: 0,
-    width: 150
+    width: 150,
+    height: 177
   },
   image5: {
     top: 0,
@@ -195,18 +194,19 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "#000000",
     borderRadius: 12,
-    right: 1,
-    bottom: 0
+    right: 0,
+    height: 177
   },
   button3Stack: {
-    width: 151,
-    marginTop: 2
+    width: 150,
+    height: 179,
+    marginLeft: 13
   },
   button2StackRow: {
     height: 179,
     flexDirection: "row",
-    marginTop: 13,
-    marginLeft: 24,
+    marginTop: 11,
+    marginLeft: 23,
     marginRight: 23
   }
 });
