@@ -18,33 +18,30 @@ function WordIdentification(props) {
           ></Image>
         </View>
       </View>
-      <View style={styles.buttonStackRow}>
-        <View style={styles.buttonStack}>
-          <TouchableOpacity style={styles.button}></TouchableOpacity>
+      <View style={styles.buttonRow}>
+        <TouchableOpacity style={styles.button}>
           <Image
             source={require("../assets/images/apple2.jpg")}
             resizeMode="contain"
             style={styles.image2}
           ></Image>
-        </View>
-        <View style={styles.button1Stack}>
-          <TouchableOpacity style={styles.button1}></TouchableOpacity>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button1}>
           <Image
             source={require("../assets/images/aam.jpg")}
             resizeMode="contain"
             style={styles.image3}
           ></Image>
-        </View>
+        </TouchableOpacity>
       </View>
-      <View style={styles.button2StackRow}>
-        <View style={styles.button2Stack}>
-          <TouchableOpacity style={styles.button2}></TouchableOpacity>
+      <View style={styles.button2Row}>
+        <TouchableOpacity style={styles.button2}>
           <Image
             source={require("../assets/images/keela_image.jpg")}
             resizeMode="contain"
             style={styles.image4}
           ></Image>
-        </View>
+        </TouchableOpacity>
         <TouchableOpacity style={styles.button3}>
           <View style={styles.image5Filler}></View>
           <Image
@@ -60,7 +57,8 @@ function WordIdentification(props) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    backgroundColor: "#fff"
   },
   cupertinoHeaderWithBackground1: {
     height: 84,
@@ -91,88 +89,57 @@ const styles = StyleSheet.create({
     marginTop: 13
   },
   button: {
-    top: 0,
-    left: 0,
-    position: "absolute",
     backgroundColor: "rgba(255,191,8,1)",
     width: 150,
     borderRadius: 12,
-    borderWidth: 0,
+    borderWidth: 1,
     borderColor: "#000000",
     height: 175
   },
   image2: {
-    left: 0,
-    position: "absolute",
-    borderWidth: 2,
-    borderColor: "#000000",
     borderRadius: 12,
-    width: 150,
-    top: 0,
-    height: 177
-  },
-  buttonStack: {
-    width: 150,
-    height: 177,
-    marginTop: 1
+    width: 129,
+    height: 124,
+    marginTop: 26,
+    marginLeft: 10
   },
   button1: {
-    left: 0,
-    position: "absolute",
     backgroundColor: "rgba(255,191,8,1)",
     borderRadius: 12,
-    borderWidth: 0,
+    borderWidth: 1,
     borderColor: "#000000",
-    top: 1,
     width: 150,
-    height: 175
-  },
-  image3: {
-    left: 1,
-    position: "absolute",
-    borderWidth: 2,
-    borderColor: "#000000",
-    borderRadius: 12,
-    top: 0,
-    width: 150,
-    height: 177
-  },
-  button1Stack: {
-    width: 151,
-    height: 177,
+    height: 175,
     marginLeft: 12
   },
-  buttonStackRow: {
-    height: 178,
+  image3: {
+    borderRadius: 12,
+    width: 124,
+    height: 138,
+    marginTop: 19,
+    marginLeft: 13
+  },
+  buttonRow: {
+    height: 175,
     flexDirection: "row",
-    marginTop: 12,
+    marginTop: 13,
     marginLeft: 24,
-    marginRight: 23
+    marginRight: 24
   },
   button2: {
-    top: 0,
-    left: 1,
-    position: "absolute",
     backgroundColor: "rgba(255,191,8,1)",
     width: 150,
     borderRadius: 12,
-    borderWidth: 0,
+    borderWidth: 1,
     borderColor: "#000000",
     height: 175
   },
   image4: {
-    top: 0,
-    left: 0,
-    width: 150,
-    position: "absolute",
-    borderWidth: 2,
-    borderColor: "#000000",
+    width: 129,
     borderRadius: 12,
-    height: 177
-  },
-  button2Stack: {
-    width: 151,
-    height: 177
+    height: 124,
+    marginTop: 26,
+    marginLeft: 11
   },
   button3: {
     backgroundColor: "rgba(255,191,8,1)",
@@ -189,17 +156,17 @@ const styles = StyleSheet.create({
     flexDirection: "row"
   },
   image5: {
-    width: 150,
-    borderWidth: 2,
-    borderColor: "#000000",
+    width: 129,
     borderRadius: 12,
-    height: 177
+    height: 124,
+    marginRight: 7,
+    marginTop: 25
   },
-  button2StackRow: {
+  button2Row: {
     height: 177,
     flexDirection: "row",
-    marginTop: 13,
-    marginLeft: 23,
+    marginTop: 15,
+    marginLeft: 24,
     marginRight: 23
   }
 });
