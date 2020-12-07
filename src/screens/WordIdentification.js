@@ -45,14 +45,14 @@ function WordIdentification(props) {
             style={styles.image4}
           ></Image>
         </View>
-        <View style={styles.button3Stack}>
-          <TouchableOpacity style={styles.button3}></TouchableOpacity>
+        <TouchableOpacity style={styles.button3}>
+          <View style={styles.image5Filler}></View>
           <Image
             source={require("../assets/images/grapes.png")}
             resizeMode="contain"
             style={styles.image5}
           ></Image>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -64,7 +64,6 @@ const styles = StyleSheet.create({
   },
   cupertinoHeaderWithBackground1: {
     height: 84,
-    width: 360,
     marginTop: 23
   },
   group: {
@@ -115,7 +114,7 @@ const styles = StyleSheet.create({
   buttonStack: {
     width: 150,
     height: 177,
-    marginTop: 2
+    marginTop: 1
   },
   button1: {
     left: 0,
@@ -124,7 +123,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderWidth: 0,
     borderColor: "#000000",
-    top: 2,
+    top: 1,
     width: 150,
     height: 175
   },
@@ -144,9 +143,9 @@ const styles = StyleSheet.create({
     marginLeft: 12
   },
   buttonStackRow: {
-    height: 179,
+    height: 178,
     flexDirection: "row",
-    marginTop: 11,
+    marginTop: 12,
     marginLeft: 24,
     marginRight: 23
   },
@@ -173,39 +172,33 @@ const styles = StyleSheet.create({
   },
   button2Stack: {
     width: 151,
-    height: 177,
-    marginTop: 2
+    height: 177
   },
   button3: {
-    top: 2,
-    left: 0,
-    position: "absolute",
     backgroundColor: "rgba(255,191,8,1)",
     borderRadius: 12,
     borderWidth: 1,
     borderColor: "#000000",
     width: 150,
-    height: 177
+    height: 177,
+    flexDirection: "row",
+    marginLeft: 13
+  },
+  image5Filler: {
+    flex: 1,
+    flexDirection: "row"
   },
   image5: {
-    top: 0,
     width: 150,
-    position: "absolute",
     borderWidth: 2,
     borderColor: "#000000",
     borderRadius: 12,
-    right: 0,
     height: 177
   },
-  button3Stack: {
-    width: 150,
-    height: 179,
-    marginLeft: 13
-  },
   button2StackRow: {
-    height: 179,
+    height: 177,
     flexDirection: "row",
-    marginTop: 11,
+    marginTop: 13,
     marginLeft: 23,
     marginRight: 23
   }
