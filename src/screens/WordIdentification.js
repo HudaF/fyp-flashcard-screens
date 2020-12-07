@@ -35,9 +35,21 @@ function WordIdentification(props) {
         </View>
       </View>
       <View style={styles.button2Row}>
-        <TouchableOpacity style={styles.button2}></TouchableOpacity>
+        <TouchableOpacity style={styles.button2}>
+          <Image
+            source={require("../assets/images/keela_image.jpg")}
+            resizeMode="contain"
+            style={styles.image4}
+          ></Image>
+        </TouchableOpacity>
         <View style={styles.button2Filler}></View>
-        <TouchableOpacity style={styles.button3}></TouchableOpacity>
+        <TouchableOpacity style={styles.button3}>
+          <Image
+            source={require("../assets/images/grapes.png")}
+            resizeMode="contain"
+            style={styles.image5}
+          ></Image>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -132,6 +144,13 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#000000"
   },
+  image4: {
+    width: 150,
+    height: 197,
+    borderWidth: 2,
+    borderColor: "#000000",
+    borderRadius: 12
+  },
   button2Filler: {
     flex: 1,
     flexDirection: "row"
@@ -143,6 +162,13 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#000000",
     width: 150
+  },
+  image5: {
+    width: 150,
+    height: 197,
+    borderWidth: 2,
+    borderColor: "#000000",
+    borderRadius: 12
   },
   button2Row: {
     height: 197,
