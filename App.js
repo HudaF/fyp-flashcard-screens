@@ -41,9 +41,9 @@ function App() {
 async function loadResourcesAsync() {
   await Promise.all([
     Font.loadAsync({
-      "roboto-regular": require("./src/assets/fonts/roboto-regular.ttf"),
-      "poppins-600": require("./src/assets/fonts/roboto-regular.ttf"),
-      "poppins-700": require("./src/assets/fonts/roboto-regular.ttf")
+      "poppins-600": require("./src/assets/fonts/poppins-600.ttf"),
+      "poppins-700": require("./src/assets/fonts/poppins-700.ttf"),
+      "roboto-regular": require("./src/assets/fonts/roboto-regular.ttf")
     })
   ]);
 }
